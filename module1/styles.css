@@ -7,7 +7,7 @@
     src:
       url("fonts/Ubuntu-Regular.ttf") format("ttf");
   }
-  
+
   @font-face {
     font-family: "Ubuntu";
     font-weight: bold;
@@ -16,7 +16,7 @@
     src:
     url("fonts/Ubuntu-Bold.ttf") format("ttf");
   }
-  
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -210,7 +210,7 @@ input[type="radio"].visually-hidden {
     padding-top: 50px;
     padding-bottom: 33px;
 }
-
+/* TODO: Не читаемый нормально код */
 .features__item:first-child {
     background: url('img/ellipse-61.svg') 370px 40px no-repeat, url('img/vector-57.svg') 320px 15px no-repeat, url('img/rectangle-green.png') right no-repeat;
 }
@@ -252,6 +252,7 @@ input[type="radio"].visually-hidden {
     line-height: 160%;
     color: #4B5D68;
     width: 220px;
+    /* TODO: Можно было записать короче margin: 0 0 20px;*/
     margin: 0;
     margin-bottom: 20px;
 }
@@ -286,6 +287,7 @@ input[type="radio"].visually-hidden {
 /* TESTIMONIALS */
 .testimonials {
     margin-top: 150px;
+    /* TODO: Лучше было сделать padding 70px 76px 60px 93px */
     padding-top: 70px;
     padding-left: 93px;
     padding-right: 76px;
@@ -309,8 +311,8 @@ input[type="radio"].visually-hidden {
     gap: 20px;
     position: relative;
 }
-
 .testimonials__item {
+    /* TODO: Использование pos relative рядом с pos absolute*/
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -320,9 +322,10 @@ input[type="radio"].visually-hidden {
     padding: 60px 70px 50px;
     box-sizing: border-box;
     box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    /* TODO: Использование pos absolute рядом с pos relative*/
     position: absolute;
     background-color: white;
-    
+
 }
 
 .testimonials__item::after {
@@ -420,6 +423,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
+/* TODO: Вижу не первый раз одинаковый код для hover, focus, active. Можно выделить его в отдельное свойство */
 .pagination__item:hover,
 .pagination__item:focus {
     opacity: 0.7;
@@ -574,6 +578,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1135px) {
     .header {
+        /* TODO: не точные значения*/
         margin-bottom: 7%;
     }
 
@@ -581,11 +586,13 @@ input[type="radio"].visually-hidden {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* TODO: не точные значения*/
         margin-bottom: 10%;
     }
 
     .promo__title {
         margin-top: 0;
+        /* TODO: не точные значения*/
         margin-bottom: 2%;
         text-align: center;
     }
@@ -593,6 +600,7 @@ input[type="radio"].visually-hidden {
     .promo__img {
         position: relative;
         order: 1;
+        /* TODO: не точные значения*/
         width: 70%;
         height: 100%;
         margin-top: -130px;
@@ -608,10 +616,12 @@ input[type="radio"].visually-hidden {
     .about-company {
         flex-direction: column;
         align-items: center;
+        /* TODO: не точные значения*/
         margin-bottom: 10%;
     }
 
     .features__description {
+        /* TODO: не точные значения*/
         margin-bottom: 5%;
     }
 }
@@ -620,6 +630,8 @@ input[type="radio"].visually-hidden {
     .testimonials {
         border-radius: 30px;
         margin-top: 10%;
+        /* TODO: не точные значения*/
+        /* TODO: Лучше использовать однострочную запись padding 5% 5% 3% 5%*/
         padding-right: 5%;
         padding-left: 5%;
         padding-top: 5%;
@@ -650,14 +662,17 @@ input[type="radio"].visually-hidden {
     }
 
     .footer {
+        /* TODO: не точные значения*/
         padding-top: 8%;
     }
 
     .footer__company {
+        /* TODO: не точные значения*/
         margin-bottom: 5%;
     }
 
     .footer__contacts {
+        /* TODO: не точные значения*/
         margin-bottom: 5%;
     }
 }
