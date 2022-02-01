@@ -23,13 +23,16 @@
 <body class="body">
     <header class="header center">
         <a class="header__logo" href="#">
+<!--            TODO: Лучше делать отдельной картинкой (так как нет анимации с изменением цвета) -->
             <svg width="49" height="35" viewBox="0 0 49 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="15" width="20" height="20" rx="10" fill="#9C69E2"/>
                 <rect x="29" width="20" height="35" rx="10" fill="#F063B8"/>
             </svg>
+<!--            TODO: Не понятно зачем нужен такой span, Если делать картинкой, можно использовать аттрибут alt -->
             <span class="visually-hidden">site logo</span>
         </a>
         <nav class="main-navigation">
+<!--            TODO: Много лишних тегов, ul li являются лишними можно просто nav + a -->
             <ul class="main-navigation__list site-list">
                 <li class="site-list__item site-list__item--active"><a class="site-list__item-link" href="#">About</a></li>
                 <li class="site-list__item"><a class="site-list__item-link" href="#footer">Help</a></li>
@@ -39,6 +42,7 @@
     </header>
 
     <main class="main center">
+<!--        TODO: Хорошая идея, использовать скрытый h1 для SEO -->
         <h1 class="visually-hidden">Warehouse - Save your data storage here.</h1>
 
         <section class="promo">
@@ -49,20 +53,22 @@
                 safely but not be afraid of being stolen by others.
             </p>
             <a class="promo__button" href="#features">Learn more</a>
+<!--            TODO: Использованием аттрибутов width\height у картинков не по стандарту, лучше width\height писать в CSS свойстве -->
             <img class="promo__img" src="img/promo-background.png" alt="background image" width="885" height="468">
         </section>
 
         <section class="about-company">
+<!--            TODO: Использованием аттрибутов width\height у картинков не по стандарту, лучше width\height писать в CSS свойстве -->
             <img class="about-company__img" src="img/about-company.png" alt="abstract image" width="469" height="469">
             <div class="about-company__information">
                 <h2 class="about-company__title">
                     We are a high-level
-                    data 
+                    data
                     storage bank
                 </h2>
                 <p class="about-company__description">
-                    The place to store various data that you can access at any time through the internet  and where you can carry it.<br> 
-                    This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
+                    The place to store various data that you can access at any time through the internet  and where you can carry it.<br>
+                    This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.
                 </p>
             </div>
         </section>
@@ -138,7 +144,7 @@
                         </h3>
                         <p class="features__item-description">
                             Data Security is one of our best facilities. Allows for your files
-                            to be safer. The file can be secured with a code or password that 
+                            to be safer. The file can be secured with a code or password that
                             you created, so only you can open the file.
                         </p>
                         <a class="features__item-link" href="#">
@@ -160,11 +166,11 @@
                     <img class="testimonials__photo" src="img/photo-john-fang.png" alt="photo John Fang">
                     <div class="testimonials__profile">
                         <h3 class="testimonials__name">
-                            John Fang                            
+                            John Fang
                         </h3>
                         <a class="testimonials__company" href="#">wordfaang.com</a>
                         <p class="testimonials__review">
-                            Suspendisse ultrices at diam lectus nullam.<br> 
+                            Suspendisse ultrices at diam lectus nullam.<br>
                             Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
                         </p>
                     </div>
@@ -220,7 +226,7 @@
                         </svg>
                     </button>
                 </div>
-            </div>           
+            </div>
         </section>
 
     </main>
